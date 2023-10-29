@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blaise Mazimpaka</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body>
+
+    <!-- Navigation Bereich -->
+
+    <section class="header">
+        <nav class="nav">
+        <div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" id="icon-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        </div>
+        <i class="fa fa-bars" id="icon-menu" onclick="showMenu()"></i>
+    </nav>
+
+<!-- Willkomen Bereich -->
+    <div class="text-box">
+        <h1 class="hblue"><span><em id="welcome">Welcome</em></span> to my Space</h1>
+        <br>
+        <br>
+        <a class="btn" href="./blog.html">Tell Me More</a>
+    </div>
+    <div class="welcomemain">
+<div class ="pblue">
+    <p>Blaise Mazimpaka, fullstack developer. Join me in the deep depths of the computers.</p>
+</div>
+<div class="pred">
+    <p>
+        Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?
+    </p>
+        <br>
+        <br>
+        <p><em>by Brian Kernighan</em></p>
+</div>
+</div>
+
+
+
+</div>
+
+    </section>
+
+    <!-- Video Bereich -->
+
+ 
+    <!-- Portfolio Bereich-->
+    <div id="portfolio">
+        <h2>Portfolio</h2>
+    </div>
+    <section class="main">
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                <div class="project-card">
+                </div>
+                
+    
+    </section>
+            
+    <!-- About Sektion -->
+    <section id="about">
+<h2>About</h2>
+
+<p class="abouttext" style="transform: rotate(0.689112deg);">As an impassioned and dedicated programmer, I am on a perpetual journey, striving each day to better my craft just a bit more. From crafting web design to creating tools, my aim is to simplify your life and mine. My fascination for technology has always been present, but the art of programming entered my life relatively late, like an unexpected yet delightful discovery.</p>
+<br>
+<p class="abouttext" style="transform: rotate(0.689112deg);" >To be creative, in my perspective, is to question, to view the world from as many angles as possible, and to have the courage to be different. It's not merely about conjuring up unique solutions, but also about questioning existing ones, challenging conventions, and daring to chart your own course. It's about seeing the unseen, imagining the unimaginable, and bringing those visions into reality.</p>
+<br>
+<p class="abouttext" style="transform: rotate(-2.689112deg);"  >Being a programmer isn't just a profession, it's a conduit for this creativity. It's a quest that pushes me to constantly look for answers, solve puzzles, and innovate in ways that can enhance our everyday lives. In the grand tapestry of life, I am but a humble weaver, stringing together lines of code into patterns of solutions, contributing to the seamless fabric of our digital existence.</p>
+    </p>
+
+    </section>
+
+
+    <!-- Contact-->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contactparagraph"><p>Send me a E-mail, because carrier pigeons are so last century.</p>
+            <br>
+            <p>at: blaise_maz@hotmail.com</p></div>
+
+            <div class="contactbutton">
+                
+                <div class="githubbutton">Github</div>
+                <div class="linkedinbutton">Linkedin</div>
+
+            </div>
+
+    </section>
+
+    <!-- Inspirations -->
+    <div id="inspiration">
+        <h2><em>Visuals</em></h2>
+    </div>
+
+    <Footer class="footer">
+        <p>© 2023 Blaise Mazimpaka</p>
+    </Footer>
+
+    <!--Script-->
+
+    <script>
+        var navlinks = document.getElementById("nav-links");
+        
+        var menuIcon = document.getElementById("icon-menu");
+        var closeIcon = document.getElementById("icon-close");
+
+        function showMenu() {
+            navlinks.style.right = "0";
+            menuIcon.style.display = "none";
+            closeIcon.style.display = "block";
+        }
+
+        function hideMenu() {
+            navlinks.style.right = "-200px";
+            menuIcon.style.display = "block";
+            closeIcon.style.display = "none";
+        }
+    </script>
+  </body>
+</html>

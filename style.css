@@ -1,0 +1,540 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Header */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(93,92,97,0.95),rgba(93,92,97,0.99)),url(Bilder/Blaise.JPG);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-bottom: #b1a296 4.5px solid;
+   
+}
+
+/* Home: Navigation */
+
+nav {
+    display: block;
+    padding: 4% 10%;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+    border-bottom: 4.5px solid #b1a296;
+    height: 70px;
+
+}
+.nav-links {
+    
+    text-align: right;
+    position: relative;
+    right: 10px;
+   
+   
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 14px;
+    margin: 10px;
+    position: relative;
+
+
+}
+.nav-links ul li a{
+    color: #557a95;
+    text-decoration: none;
+    font-size: 60px;
+    font-weight: 500;
+   
+}
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 4.5px;
+    background: #b1a296;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Home Text */
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: sticky;
+    top: 500px;
+    text-align: center;
+}
+/* Home: Welcome Title */
+
+#welcome {
+    color: #b1a296;
+    
+}
+.welcomemain {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.hblue {
+    font-weight: 900;
+    font-size: 80px;
+    color: #557a95;
+}
+.pblue {
+    font-weight: 100;
+    color: #b1a296;
+    font-size: 30px;
+    width: 500px;
+    margin: 50px;
+    margin-top: 600px;
+
+}
+.pred {
+    font-weight: 100;
+    color: #b1a296;
+    font-size: 30px;
+    width: 500px;
+    margin: 50px;
+    margin-top: 600px;
+ 
+
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #b1a296;
+    border: 4.5px solid #b1a296;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+.btn:hover{
+    border: 1px solid #557a95;
+    background: #557a95;
+    transition: 0.5s;
+    
+}
+
+nav .fa-bars {
+    display: none;
+}
+
+nav .fa-times {
+    display: none;
+}
+/* Portfolio */
+
+#portfolio {
+    background-color: #557a95;
+    height: 278px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 120px;
+    color: #b1a296;
+    padding: 100px;
+
+}
+
+
+/* Home: main section  */
+
+.main {
+    background-color:#5d5c61;
+    border-top: 4.5px solid #b1a296;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    box-sizing: border-box;
+    float: none;
+    line-height: normal;
+    position: static;
+    z-index: auto;
+}
+
+.project-card {
+    box-sizing: border-box;
+    float: none;
+    height: normal;
+    position: static;
+    z-index: auto;
+    border: 4.5px solid #b1a296; padding: 48px;
+    margin: -3px;
+
+    height: 468px;
+    
+}
+ 
+/* About Sektion */
+
+#about {
+    background-color: #557a95 ;
+    border-top: 4.5px solid #b1a296;
+    height: 1500px;
+
+
+}
+
+.abouttext {
+    background-color: #b1a296;
+    margin-left: 0px;
+    border: #5d5c61 4px solid;
+    padding: 48px;
+    margin: 48.2px;
+    color: #5d5c61;
+    font-size: 25px;
+    margin-top: 20PX;
+    box-shadow: 8px 8px #0a0a0a;
+
+    
+}
+    
+/* Contact */
+
+#contact {
+    background-color: #b1a296;
+    height: 800px;
+    border-top: 4.5px solid #5d5c61;
+    
+}
+#contact h2 {
+    text-align: left;
+    font-size: 120px;
+    color: #557a95;
+    padding: 100px;
+
+}
+.contactbutton {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+    
+
+}
+.githubbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: #5d5c61;
+    border: 4.5px solid #557a95;
+    padding: 12px 34px;
+    font-size: 55px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    margin: 30px;
+    transform: rotate(-10deg);
+    box-shadow: 8px 8px #0a0a0a;
+}
+.linkedinbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: #5d5c61;
+    border: 4.5px solid #557a95;
+    padding: 12px 60px 12px 34px;
+    font-size: 55px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 170px;
+    margin: 30px;
+    transform: rotate(-10deg);
+    box-shadow: 8px 8px #0a0a0a;
+   
+
+}
+.linkedinbutton:hover{
+    border: 0px solid #557a95;
+    background: #557a95;
+    transition: 0.5s;
+}
+.githubbutton:hover{
+    border: 0px solid #557a95;
+    background: #557a95;
+    transition: 0.5s;
+
+}
+
+.contactparagraph {
+    display: block;
+    margin-left: 300px;
+    color: #5d5c61;
+    font-size: 30px;
+    text-align: center;
+    border: #557a95 4.5px solid;
+    width: 400px;
+    text-align: center;
+    transform: rotate(10deg);
+    padding: 20px;
+    box-shadow: 8px 8px #0a0a0a;
+}
+/* Inpiration */
+
+#inspiration {
+    background-color: #5d5c61;
+    height: 1000px;
+    border-top: #557a95 4.5px solid;
+    
+}
+
+/* Footer */
+
+.footer {
+    background-color: #b1a296;
+    height: 300px;
+    font-size: 50px;
+    color: #557a95;
+    border-top: #557a95 4.5px solid;
+    text-align: center;
+}
+
+.footer p {
+    margin-top: 60px;
+}
+
+/* Blog */
+
+.blogtitel {
+    color: #b1a296;
+    text-align: center;
+    margin: 30px;
+    
+}
+.blogs {
+    border: #b1a296 4.5px solid;
+    margin: 0px 20px;
+    height: 900px;
+    background-color: #557a95;
+    
+}
+.blogh {
+    border: #5d5c61 solid 4.5px;
+    height: 30px;
+    width: 800px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #b1a296;
+    width: 97%;
+    
+}
+.blogh h1 {
+    color: #5d5c61;
+
+}
+.articleblog {
+    height: 400px;
+    border: #5d5c61 4.5px solid;
+    background-color: #b1a296;
+    width: 98%;
+    height: 90%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+@media(max-width: 660px){
+    .hblue {
+        font-size: 30px;
+    }
+    /* Navigation */
+
+    .nav-links{
+        position: absolute;
+        background-color: #b1a296;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 1;
+        transition: 1s;
+    }
+    nav .fa-bars {
+        display: block;
+        color: #557a95;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .fa-times {
+        display: block;
+        color: #557a95;
+        margin: 0px;
+        font-size: 22px;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 160px;
+    }
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 14px;
+        margin: 20px;
+        position: relative;
+        margin: 25px 45px;
+        }
+        .nav-links ul li a{
+        font-size: 30px;
+
+        }
+
+    /* Home Welocome Text */
+    .text-box {
+        width: 90%;
+        color: white;
+        position: sticky;
+        top: 160px;
+        text-align: center;
+    }
+
+    .text-box p {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+ 
+    }
+    /* Button */
+    .btn {
+        font-size: 13px;
+        margin-top: 140px;
+   
+    }
+    .btn:hover{
+        border: 1px solid #557a95;
+        background: #557a95;
+        transition: 0.5s;
+        
+    }
+    /* .welcomemain */
+    .welcomemain {
+        display: block;
+
+        
+    }
+    .pblue, .pred {
+        font-size: 10px;
+        margin-top: 135px;
+        width: 200px;
+        font-size: 13px;
+
+    }
+
+    /* portfolio */
+
+    #portfolio {
+        background-color: #557a95;
+        height: 100px;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #b1a296;
+        padding: 30px;
+    }
+
+    .main {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /*About*/
+   
+    #about {
+        background-color: #557a95 ;
+        border-top: 4.5px solid #b1a296;
+        height: 1200px;
+    
+    
+    }
+    
+    .abouttext {
+        background-color: #b1a296;
+        border: #5d5c61 4px solid;
+        padding: 28px;
+        color: #5d5c61;
+        font-size: 15px;
+    
+        
+    }
+    
+    /* Contact */
+    #contact {
+        height: 600px;
+    }
+    #contact h2{
+        text-align: center;
+        font-size: 30px;
+        color: #557a95;
+        padding: 30px;
+
+    }
+    .contactparagraph {
+        font-size: 20px;
+        text-align: left;
+        margin-left: 20px;
+        width: 280px;
+    }
+    .githubbutton, .linkedinbutton {
+        font-size: 20px;
+    }
+    .contactbutton {
+        display: grid;  
+
+    }
+    .linkedinbutton:hover{
+        border: 0px solid #557a95;
+        background: #557a95;
+        transition: 0.5s;
+    }
+    .githubbutton:hover{
+        border: 0px solid #557a95;
+        background: #557a95;
+        transition: 0.5s;
+    }
+
+    /* Inspiration */
+
+    #inspiration h4 {
+        text-align: center;
+        font-size: 30px;
+        color: #557a95;
+        padding: 30px;
+
+    }
+
+    /* Footer */
+    .footer {
+        height: 200px;
+    }
+    .footer p {
+        font-size: 20px;
+
+    }
+}
