@@ -28,14 +28,15 @@ nav {
     align-items: flex-end;
     z-index: 1;
     border-bottom: 4.5px solid #b1a296;
-    height: 70px;
+    height: 70px; 
+
 
 }
 .nav-links {
     
     text-align: right;
     position: relative;
-    right: 10px;
+    right: 10px; 
    
    
 }
@@ -199,7 +200,7 @@ h2 {
     border: #5d5c61 4px solid;
     padding: 48px;
     margin: 48.2px;
-    color: #5d5c61;
+    color: #0a0a0a;
     font-size: 25px;
     margin-top: 20PX;
     box-shadow: 8px 8px #0a0a0a;
@@ -233,7 +234,7 @@ h2 {
 .githubbutton {
     display: inline-block;
     text-decoration: none;
-    color: #5d5c61;
+    color: #0a0a0a;
     border: 4.5px solid #557a95;
     padding: 12px 34px;
     font-size: 55px;
@@ -248,7 +249,7 @@ h2 {
 .linkedinbutton {
     display: inline-block;
     text-decoration: none;
-    color: #5d5c61;
+    color: black;
     border: 4.5px solid #557a95;
     padding: 12px 60px 12px 34px;
     font-size: 55px;
@@ -277,7 +278,7 @@ h2 {
 .contactparagraph {
     display: block;
     margin-left: 300px;
-    color: #5d5c61;
+    color: #0a0a0a;
     font-size: 30px;
     text-align: center;
     border: #557a95 4.5px solid;
@@ -323,13 +324,21 @@ h2 {
     border-bottom: 4.5px solid #b1a296;
     
 }
+.blogp {
+    font-weight: 100;
+    color: #b1a296;
+    font-size: 26px;
+    margin: 50px;
+
+}
 
 .blogs {
     border: #557a95 solid;
-    border-width: 4.5px 0px;
-    height: 900px;
+    border-width: 4.5px 4.5pxpx;
+    height: 100%;
     background-color: #b1a296;
     margin-top: 200px;
+    
     
 }
 .blogs h1 {
@@ -338,13 +347,46 @@ h2 {
     margin-top: 50px;
     font-style: italic;
     margin-left: 20px;
+    font-size: 40px;
+    margin: 50px;
+
 }
 .articleblog {
     padding: 10px;
+    font-size: 26px;
+    margin: 50px;
+    background-color: #b1a296;
+    border: #557a95 solid;
+    border-width: 4.5px 4.5px;
+    padding: 20px;
+
 }
 .articleblog ul{
     padding: 20px;
 }
+.originalarticlebutton {
+    display: inline-block;
+    text-decoration: none;
+    color: #5d5c61;
+    border: 4.5px solid #557a95;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+    margin: 30px;
+    transform: rotate(-10deg);
+    box-shadow: 8px 8px #0a0a0a;
+}
+.originalarticlebutton:hover {
+
+        border: 0px solid #557a95;
+        background: #557a95;
+        transition: 0.5s;
+    
+    }
+
 
 @media(max-width: 660px){
     body, html {
@@ -528,7 +570,19 @@ h2 {
         font-size: 30px;
         color: #557a95;
         padding: 30px;
+        white-space: nowrap;
+        overflow: hidden;
 
+    }
+    .pix {
+        width: 15vw;
+        height: 75vh;
+        background-position: center;
+        background-size: 75vh;
+        margin: 1vw;
+        border-radius: 3vw;
+        display: inline-block;
+        cursor: pointer;
     }
 
     /* Footer */
@@ -550,17 +604,21 @@ h2 {
     }
     .blogp {
         color: #b1a296;
-        padding: 15px;
-        margin-top: 20px;
+        padding: 5px;
+        margin: 20px;
+        font-size: 15px;
     }
     .blogs {
         margin-top: 40px;
-        max-height: 700px;
+        max-height: 100%;
     }
     .articleblog { 
-        border-top: #5d5c61 solid 4.5px;
-        overflow: scroll;
-        max-height: 700px;
+        border:#557a95 4.5px solid;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 15px;
+       
         
     }
 
