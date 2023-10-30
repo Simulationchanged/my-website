@@ -316,42 +316,34 @@ h2 {
 .blogtitel {
     color: #b1a296;
     text-align: center;
-    margin: 30px;
-    
-}
-.blogs {
-    border: #b1a296 4.5px solid;
-    margin: 0px 20px;
-    height: 900px;
+    margin-top: 100px;
     background-color: #557a95;
+    height: 278px;
+    border-top: 4.5px solid #b1a296;
+    border-bottom: 4.5px solid #b1a296;
     
 }
-.blogh {
-    border: #5d5c61 solid 4.5px;
-    height: 30px;
-    width: 800px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #b1a296;
-    width: 97%;
-    
-}
-.blogh h1 {
-    color: #5d5c61;
 
+.blogs {
+    border: #557a95 solid;
+    border-width: 4.5px 0px;
+    height: 900px;
+    background-color: #b1a296;
+    margin-top: 200px;
+    
+}
+.blogs h1 {
+    text-align: left;
+    color: #5d5c61;
+    margin-top: 50px;
+    font-style: italic;
+    margin-left: 20px;
 }
 .articleblog {
-    height: 400px;
-    border: #5d5c61 4.5px solid;
-    background-color: #b1a296;
-    width: 98%;
-    height: 90%;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto
+    padding: 10px;
+}
+.articleblog ul{
+    padding: 20px;
 }
 
 @media(max-width: 660px){
@@ -370,7 +362,7 @@ h2 {
     .nav-links{
         position: fixed;
         background-color: #b1a296;
-        height: 100vh;
+        height: 130vh;
         width: 200px;
         top: 0;
         right: -200px;
@@ -496,7 +488,7 @@ h2 {
     
     /* Contact */
     #contact {
-        height: 600px;
+        height: 700px;
     }
     #contact h2{
         text-align: center;
@@ -547,4 +539,29 @@ h2 {
         font-size: 20px;
 
     }
+
+    /* Blog */
+
+    .blogtitel {
+        background-color: #557a95;
+        height: 100px;
+        margin-top: 0px;
+        border-top: 0px;
+    }
+    .blogp {
+        color: #b1a296;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .blogs {
+        margin-top: 40px;
+        max-height: 700px;
+    }
+    .articleblog { 
+        border-top: #5d5c61 solid 4.5px;
+        overflow: scroll;
+        max-height: 700px;
+        
+    }
+
 }

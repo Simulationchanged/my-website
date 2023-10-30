@@ -36,18 +36,70 @@
         </div>
         <i class="fa fa-bars" id="icon-menu" onclick="showMenu()"></i>
     </nav>
-    <h1 class="blogtitel">Blog</h1>
+    <div class="blogtitel">
+      <h2>Blog</h2>
+    </div>
+    <div>
+      <p class="blogp">With these blog posts, I want to share other blog posts and articles on various topics that personally interest me a lot.
+        <br> 
+        Every now and then, I also write some myself (I'm not the best writer). This includes topics related to software development but also other subjects like creativity, discipline, and so on.</p>
+    </div>
+
     <div class="blogs">
-      <div class="blogh">
-        <h1>Titel</h1>
-      </div>
+        <h1>Articles</h1>
       <div class="articleblog">
+        <h4>A More Creative Brain</h4>
+        <br>
+        <p>Written by James Clear</p>
+        <p>Date: 30.October.2023</p>
+        <br>
+        <br>
+        <p>
+        The main theme of the article is the importance of the creative process in problem-solving. 
+        Creativity is described as the ability to forge new connections between old ideas. 
+        This creative process can be cultivated in five steps, as demonstrated by the example of Frederic Eugene Ives, who developed a groundbreaking printing technique. 
+        This method, called "halftone printing," fundamentally changed the printing industry. 
+        His journey mirrors the five stages described by James Webb Young:</p>
+        <ul>
+          <li>gather new information</li>
+          <li>mentally process this information</li>
+          <li>step back from the problem</li>
+          <li>wait for an insight or solution</li>
+          <li>refine the idea based on feedback</li>
+        </ul>
+        <p>In summary, creativity is about linking existing concepts in innovative ways.
+        </p>
+        <a href="https://jamesclear.com/five-step-creative-process"><div class="githubbutton">Original Article</div></a>
 
       </div>
 
     </div>
    
     </section>
+
+     <!--Script-->
+
+     <script>
+      var navlinks = document.getElementById("nav-links");
+      
+      var menuIcon = document.getElementById("icon-menu");
+      var closeIcon = document.getElementById("icon-close");
+
+      function showMenu() {
+          navlinks.style.right = "0";
+          menuIcon.style.display = "none";
+          closeIcon.style.display = "block";
+      }
+
+      function hideMenu() {
+          navlinks.style.right = "-200px";
+          menuIcon.style.display = "block";
+          closeIcon.style.display = "none";
+      }
+  </script>
+</body>
+</html>
+
     
   </body>
 </html>
