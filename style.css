@@ -355,8 +355,14 @@ h2 {
 }
 
 @media(max-width: 660px){
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
     .hblue {
         font-size: 30px;
+        
     }
    
     /* Navigation */
@@ -424,9 +430,12 @@ h2 {
     .btn {
         font-size: 13px;
         margin-top: 140px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
    
     }
-    .btn:hover{
+    .btn:active{
         border: 1px solid #557a95;
         background: #557a95;
         transition: 0.5s;
@@ -509,12 +518,12 @@ h2 {
         display: grid;  
 
     }
-    .linkedinbutton:hover{
+    .linkedinbutton:active{
         border: 0px solid #557a95;
         background: #557a95;
         transition: 0.5s;
     }
-    .githubbutton:hover{
+    .githubbutton:active{
         border: 0px solid #557a95;
         background: #557a95;
         transition: 0.5s;
