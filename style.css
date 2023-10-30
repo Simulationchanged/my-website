@@ -358,10 +358,11 @@ h2 {
     .hblue {
         font-size: 30px;
     }
+   
     /* Navigation */
 
     .nav-links{
-        position: absolute;
+        position: fixed;
         background-color: #b1a296;
         height: 100vh;
         width: 200px;
