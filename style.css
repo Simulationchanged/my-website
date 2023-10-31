@@ -161,14 +161,30 @@ h2 {
     margin: -3px;
     display: block;
 }
+.project-card img {
+    display: grid;
+    grid-template-columns:max-content
+}
 
 .projects {
-    background-image: ;
     margin-bottom: -1em;
     box-shadow: 8px 8px #0a0a0a;
     border: .3em solid #0a0a0a;
     height: 20.5rem;
-   
+    width: auto;
+    box-sizing: border-box;
+    display: block;
+    float: none;
+    line-height: normal;
+    position: static;
+    z-index: auto;
+}
+.projectinfo {
+    height: 200px;
+    margin-top: 40px;
+    color: #b1a296;
+    width: 300px;
+
 }
 
 
@@ -188,17 +204,38 @@ h2 {
 
 .project-card {
     box-sizing: border-box;
+    display: block;
     float: none;
     height: normal;
     position: static;
     z-index: auto;
+    z-index: auto;
     border: 4.5px solid #b1a296; padding: 48px;
     margin: -3px;
 
-    height: 468px;
+    height: 650px;
     
 }
- 
+.projectbutton {
+    display: inline-block;
+    text-decoration: none;
+    color: #b1a296;
+    border: 4.5px solid #b1a296;
+    padding: 12px 12px 12px 12px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    margin: 30px;
+    box-shadow: 8px 8px #0a0a0a;
+}
+
+.stack {
+
+    color: #b1a296;
+    font-size: medium;
+}
 /* About Sektion */
 
 #about {
@@ -227,7 +264,7 @@ h2 {
 
 #contact {
     background-color: #b1a296;
-    height: 800px;
+    height: 900px;
     border-top: 4.5px solid #5d5c61;
     
 }
@@ -278,17 +315,14 @@ h2 {
    
 
 }
-.linkedinbutton:hover{
+.linkedinbutton:hover, .projectbutton:hover, .githubbutton:hover {
     border: 0px solid #557a95;
     background: #557a95;
     transition: 0.5s;
 }
-.githubbutton:hover{
-    border: 0px solid #557a95;
-    background: #557a95;
-    transition: 0.5s;
 
-}
+
+
 
 .contactparagraph {
     display: block;
@@ -307,9 +341,20 @@ h2 {
 
 #inspiration {
     background-color: #5d5c61;
-    height: 1000px;
     border-top: #557a95 4.5px solid;
+
+
+
     
+}
+video {
+  
+    width: 100%;
+    opacity: 0.2;
+    height: 101%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 /* Footer */
@@ -522,6 +567,11 @@ h2 {
         display: block;
         box-sizing: border-box;
     }
+    .projects {
+    
+        width: 100%;
+    }
+      
 
     /*About*/
    
@@ -559,6 +609,8 @@ h2 {
         text-align: left;
         margin-left: 20px;
         width: 280px;
+
+        font-style: italic;
     }
     .githubbutton, .linkedinbutton {
         font-size: 20px;
@@ -579,6 +631,19 @@ h2 {
     }
 
     /* Inspiration */
+    video {
+  
+        align-items: center;
+        width: max-content;
+        opacity: 0.2;
+        height: 500px;
+        zoom: 300px;
+        position: relative;
+
+    }
+    #ispiration {
+        background: #b1a296;
+    }
 
     #inspiration h4 {
         text-align: center;
