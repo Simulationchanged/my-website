@@ -571,6 +571,9 @@ video {
     
         width: 100%;
     }
+    .project-card {
+        height: 680px;
+    }
       
 
     /*About*/
@@ -632,8 +635,7 @@ video {
 
     /* Inspiration */
     video {
-  
-        align-items: center;
+        
         width: max-content;
         opacity: 0.2;
         height: 500px;
