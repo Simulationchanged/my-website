@@ -254,17 +254,19 @@ h2 {
     font-size: 25px;
     margin-top: 20PX;
     box-shadow: 8px 8px #0a0a0a;
-
-
-    
 }
+.aboutp {
+        background-color: #5d5c61;
+        border-top: #b1a296 4.5px solid;
+        border-bottom: #557a95 solid 4.5px;
+    }
     
 /* Contact */
 
 #contact {
     background-color: #b1a296;
     height: 1100px;
-    border-top: 4.5px solid #5d5c61;
+
     
 }
 #contact h2 {
