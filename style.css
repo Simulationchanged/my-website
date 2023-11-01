@@ -213,7 +213,7 @@ h2 {
     border: 4.5px solid #b1a296; padding: 48px;
     margin: -3px;
 
-    height: 650px;
+    height: 680px;
     
 }
 .projectbutton {
@@ -239,11 +239,9 @@ h2 {
 /* About Sektion */
 
 #about {
-    background-color: #557a95 ;
+    background: #557a95;
     border-top: 4.5px solid #b1a296;
-    height: 1500px;
-
-
+    display: grid;
 }
 
 .abouttext {
@@ -256,6 +254,7 @@ h2 {
     font-size: 25px;
     margin-top: 20PX;
     box-shadow: 8px 8px #0a0a0a;
+
 
     
 }
@@ -276,7 +275,7 @@ h2 {
 
 }
 .contactbutton {
-    display: inline-block;
+    display: inline;
     margin-left: 20px;
     margin-top: 20px;
     
@@ -295,7 +294,7 @@ h2 {
     cursor: pointer;
     width: 150px;
     margin: 30px;
-    transform: rotate(-10deg);
+
     box-shadow: 8px 8px #0a0a0a;
 }
 .linkedinbutton {
@@ -310,7 +309,7 @@ h2 {
     cursor: pointer;
     width: 170px;
     margin: 30px;
-    transform: rotate(-10deg);
+
     box-shadow: 8px 8px #0a0a0a;
    
 
@@ -325,17 +324,17 @@ h2 {
 
 
 .contactparagraph {
-    display: block;
-    margin-left: 300px;
+    display: grid;
     color: #0a0a0a;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     border: #557a95 4.5px solid;
     width: 400px;
     text-align: center;
-    transform: rotate(10deg);
-    padding: 20px;
+    padding: 100px;
     box-shadow: 8px 8px #0a0a0a;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Inpiration */
 
@@ -573,6 +572,7 @@ video {
     }
     .project-card {
         height: 680px;
+        border: #b1a296 solid 4.5px 6.5px;
     }
       
 
@@ -588,7 +588,7 @@ video {
     
     .abouttext {
         background-color: #b1a296;
-        border: #5d5c61 4px solid;
+        border: #5d5c61 4.5px solid;
         padding: 28px;
         color: #0a0a0a;
         font-size: 15px;
