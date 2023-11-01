@@ -572,26 +572,35 @@ video {
     }
     .project-card {
         height: 700px;
-        border: #b1a296 solid 4.5px 6.5px;
+        border-top: #b1a296 solid 4.5px;
     }
-      
+    .projectbutton {
+        width: 170px;
+    }
 
     /*About*/
    
     #about {
         background-color: #557a95 ;
         border-top: 4.5px solid #b1a296;
-        height: 900px;
+        height: 100px;
     
     
+    }
+
+    .aboutp {
+        background-color: #5d5c61;
+        border-top: #b1a296 4.5px solid;
+        border-bottom: #557a95 solid 4.5px;
     }
     
     .abouttext {
         background-color: #b1a296;
-        border: #5d5c61 4.5px solid;
+        border: #557a95 4.5px solid;
         padding: 28px;
         color: #0a0a0a;
         font-size: 15px;
+        margin: 20px;
 
     
         
@@ -600,6 +609,7 @@ video {
     /* Contact */
     #contact {
         height: 800px;
+        border-top: #557a95;
     }
     #contact h2{
         text-align: center;
@@ -640,6 +650,7 @@ video {
     video {
         opacity: 0.4;
         height: 100%;
+        
     }
     #ispiration {
         background: #b1a296;
