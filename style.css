@@ -760,21 +760,26 @@ video {
     }
     
     .container p {
-            font-size: 24px;
+            font-size: 20px;
             margin-top: 300px;
+            row-gap: 5px;
+            border-bottom: #b1a296 solid 4.5px;
+
         }
         
         .container .time-content {
-            font-size: 36px;
-            column-gap: 15px;
+            font-size: 12px;
+            column-gap: 10px;
         }
         
         .time-content .time {
-            flex-direction: column; 
+            flex-direction: column;
+
         }
         
         .time .number {
-            font-size: 40px;
+            font-size: 20px;
             margin-top: 200px;
+            width: 80%;
         }
 }
