@@ -36,6 +36,9 @@
         </div>
         <i class="fa fa-bars" id="icon-menu" onclick="showMenu()"></i>
     </nav>
+
+<!-- Launch Soon Page -->
+
     <div class="blogtitel">
       <h2>Lauching Soon!</h2>
       <div class="container">
@@ -85,42 +88,44 @@
           menuIcon.style.display = "block";
           closeIcon.style.display = "none";
       }
-      const seconds = document.querySelector('.seconds .number');
-      const minutes = document.querySelector('.minutes .number');
-      const hours = document.querySelector('.hours .number');
-      const days = document.querySelector('.days .number');
+      
+    //   Launch Countdown Script
 
-      let secValue = 60,
-        minValue = 60,
-        hoursValue = 2,
-        daysValue = 12;
 
-        const timeFunction = setInterval(()=> {
-            secValue--;
+const secondsEl = document.querySelector('.seconds .number');
+const minutesEl = document.querySelector('.minutes .number');
+const hoursEl = document.querySelector('.hours .number');
+const daysEl = document.querySelector('.days .number');
 
-            if(secValue === 0){
-               minValue--;
-               secValue = 60; 
-            }
-            if(minValue === 0){
-               hoursValue--;
-               minValue = 60; 
-            }
-            if(hoursValue === 0){
-               daysValue--;
-               hoursValue = 60; 
-            }
-            if(daysValue === 0){
-               clearInterval(timeFunction); 
-            }
-            console.log(secValue);
-            seconds.textContent = secValue < 10 ? `0${secValue}`: secValue;
-            minutes.textContent = minValue < 10 ? `0${minValue}`: minValue;
-            hours.textContent = hoursValue < 10 ? `0${hoursValue}`: hoursValue;
-            days.textContent = daysValue < 10 ? `0${daysValue}`: daysValue;
-        }, 1000);
+const endTime = new Date("2023-11-12T00:00:00");
 
-  </script>
+function updateCountdown() {
+    const now = new Date();
+    const difference = endTime - now;
+
+    if (difference <= 0) {
+        clearInterval(interval);
+        return;
+    }
+
+    const daysValue = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hoursValue = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minValue = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const secValue = Math.floor((difference % (1000 * 60)) / 1000);
+
+    secondsEl.textContent = secValue < 10 ? `0${secValue}` : secValue;
+    minutesEl.textContent = minValue < 10 ? `0${minValue}` : minValue;
+    hoursEl.textContent = hoursValue < 10 ? `0${hoursValue}` : hoursValue;
+    daysEl.textContent = daysValue < 10 ? `0${daysValue}` : daysValue;
+}
+
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown();
+
+</script>
+
+
+
 </body>
 </html>
 
