@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blaise Mazimpaka</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  </head>
+  <body>
+
+    <!-- Navigation Bereich -->
+
+    <section class="header">
+        <nav class="nav">
+        <div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" id="icon-close" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#portfolio">Portfolio</a></li>
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+            </ul>
+        </div>
+        </div>
+        <i class="fa fa-bars" id="icon-menu" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Launch Page -->
+
+    <div class="blogtitel">
+      <h2>Lauch Soon</h2>
+    </div>
+
+    <!-- Launch paragraph text -->
+
+    <div>
+      <p class="blogp">I am currently working on the site and am excited to showcase it to the world. Just a little more patience is needed.
+    </div>
+    
+    <!-- Article or Blogpost -->
+
+    <article class="blogs">
+        <h1>It's get Closer and Closer </h1>
+
+        <!-- Article or Blog Block (Unten) -->
+
+        <div class="articleblog">
+            <div class="container">
+                <div class="time-content">
+                    <div class="time days">
+                        <span class="number">12</span>
+                        <span class="text">Days</span>
+                    </div>
+                    <div class="time hours">
+                        <span class="number">02</span>
+                        <span class="text">Hours</span>
+                    </div>
+                    <div class="time minutes">
+                        <span class="number">60</span>
+                        <span class="text">Minutes</span>
+                    </div>
+                    <div class="time seconds">
+                        <span class="number">60</span>
+                        <span class="text">Seconds</span>
+                    </div>
+                </div>
+
+  
+        </div>
+      
+
+
+      <!-- Oben -->
+
+    </article>
+   
+    </section>
+
+     <!--Script-->
+
+     <script>
+      var navlinks = document.getElementById("nav-links");
+      
+      var menuIcon = document.getElementById("icon-menu");
+      var closeIcon = document.getElementById("icon-close");
+
+      function showMenu() {
+          navlinks.style.right = "0";
+          menuIcon.style.display = "none";
+          closeIcon.style.display = "block";
+      }
+
+      function hideMenu() {
+          navlinks.style.right = "-200px";
+          menuIcon.style.display = "block";
+          closeIcon.style.display = "none";
+
+            //   Launch Countdown Script
+
+
+const secondsEl = document.querySelector('.seconds .number');
+const minutesEl = document.querySelector('.minutes .number');
+const hoursEl = document.querySelector('.hours .number');
+const daysEl = document.querySelector('.days .number');
+
+const endTime = new Date("2023-11-12T00:00:00");
+
+function updateCountdown() {
+    const now = new Date();
+    const difference = endTime - now;
+
+    if (difference <= 0) {
+        clearInterval(interval);
+        return;
+    }
+
+    const daysValue = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hoursValue = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minValue = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    const secValue = Math.floor((difference % (1000 * 60)) / 1000);
+
+    secondsEl.textContent = secValue < 10 ? `0${secValue}` : secValue;
+    minutesEl.textContent = minValue < 10 ? `0${minValue}` : minValue;
+    hoursEl.textContent = hoursValue < 10 ? `0${hoursValue}` : hoursValue;
+    daysEl.textContent = daysValue < 10 ? `0${daysValue}` : daysValue;
+}
+
+const interval = setInterval(updateCountdown, 1000);
+updateCountdown();
+
+      }
+  </script>
+</body>
+</html>
+
+    
+  </body>
+</html>
