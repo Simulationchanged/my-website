@@ -31,7 +31,7 @@ const minutesEl = document.querySelector('.minutes .number');
 const hoursEl = document.querySelector('.hours .number');
 const daysEl = document.querySelector('.days .number');
 
-const endTime = new Date("2023-11-20T00:00:00");
+const endTime = new Date("2023-11-30T00:00:00");
 
 function updateCountdown() {
     const now = new Date();

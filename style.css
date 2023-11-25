@@ -160,11 +160,12 @@ h2 {
     padding:  3rem;
     border: .3em solid #0a0a0a;
     margin: -3px;
-    display: block;
+
 }
 .project-card img {
     display: grid;
-    grid-template-columns:max-content
+    grid-template-columns:max-content;
+    max-width: 50vh;
 }
 
 .projects {
@@ -172,8 +173,9 @@ h2 {
     box-shadow: 8px 8px #0a0a0a;
     border: .3em solid #0a0a0a;
     height: 20.5rem;
-    width: auto;
+    width: 100%;
     box-sizing: border-box;
+    object-fit: cover;
     display: block;
     float: none;
     line-height: normal;
