@@ -576,6 +576,19 @@ video {
     font-size: 60px;
    }
 
+   /* Mailsucces Page */
+   .mailsucces{
+    background: #5d5c61;
+    height: 100vh;
+    align-items: center;
+   }
+   .mailsuccesitem{
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto;
+
+   }
+
 
 @media(max-width: 660px){
     body, html {
@@ -897,5 +910,12 @@ video {
         font-size: 30px;
         margin-top: 200px;
         width: 90%;
+    }
+    /* Mailsucces */
+    .mailsuccesitem
+    {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     }
 }
