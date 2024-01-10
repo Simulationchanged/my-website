@@ -764,11 +764,11 @@ video {
         height: 10px;
         margin-left: auto;
         margin-right: auto;
-        padding: 40px;
+        padding: 30px;
     }
     .contactbutton {
         display: flex;  
-
+        justify-content: center;
     }
     .linkedinbutton:active{
         border: 0px solid #557a95;
