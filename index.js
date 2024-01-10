@@ -18,6 +18,17 @@ var navlinks = document.getElementById("nav-links");
             menuIcon.style.display = "block";
             closeIcon.style.display = "none";
         }
+                // new
+        function isMobileView() {
+            return window.innerWidth <= 660; // 
+        }
+
+        // Event Listener
+        navlinks.addEventListener('click', function() {
+            if (isMobileView()) {
+                hideMenu();
+            }
+        });
 
 // Script Launch Countdown
 
