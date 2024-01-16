@@ -319,7 +319,12 @@ h2 {
    
 
 }
-.linkedinbutton:hover, .projectbutton:hover, .githubbutton:hover {
+.linkedinbutton:hover, .projectbutton:hover, .githubbutton:hover{
+    border: 0px solid #557a95;
+    background: #557a95;
+    transition: 0.5s;
+}
+#article-toggle {
     border: 0px solid #557a95;
     background: #557a95;
     transition: 0.5s;
@@ -489,6 +494,119 @@ video {
     margin: 50px;
 
 }
+.blog-card {
+    display: flex;
+}
+.blog-display{
+    width: 30%;
+    height: 20vh;
+    border: #557a95 4.5px solid;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.blog-display:hover{
+    background: #557a95;
+    transition: 0.5s;
+}
+.blog-display img {
+    width: auto;
+    height: 100%;
+    
+}
+.blog-display-title{
+    position: absolute;
+    margin: 10px;
+    color: #0a0a0a;
+}
+
+/* Dropdown Menu */
+.blog-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #0a0a0a;
+    border: 4.5px solid #557a95;
+    padding: 12px 34px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 40%;
+
+    margin: 30px;
+    box-shadow: 8px 8px #0a0a0a;
+}
+
+#article-toggle {
+    display: inline-block;
+    text-decoration: none;
+    color: #0a0a0a;
+    border: 4.5px solid #557a95;
+    padding: 12px 34px;
+    font-size: 25px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 40%;
+    margin: 30px;
+    box-shadow: 8px 8px #0a0a0a;
+}
+.bx {
+  font-size: 1.1rem;
+}
+
+.dropdown {
+  position: absolute;
+  width: 250px;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  margin-top: 0.3rem;
+  color: #0a0a0a;
+  color: #0a0a0a;
+  border: 4.5px solid #557a95;
+  padding: 12px 34px;
+  font-size: 25px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  width: 40%;
+  max-width: 185px;
+  margin: 30px;
+  box-shadow: 8px 8px #0a0a0a;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  column-gap: var(--gap);
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown a:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0rem);
+}
+
+#arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+
+/* Articles */
 
 .articleblog {
     padding: 10px;
