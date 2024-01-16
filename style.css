@@ -494,6 +494,32 @@ video {
     margin: 50px;
 
 }
+.blog-card {
+    display: flex;
+}
+.blog-display{
+    width: 30%;
+    height: 20vh;
+    border: #557a95 4.5px solid;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.blog-display:hover{
+    background: #557a95;
+    transition: 0.5s;
+}
+.blog-display img {
+    width: auto;
+    height: 100%;
+    
+}
+.blog-display-title{
+    position: absolute;
+    margin: 10px;
+    color: #0a0a0a;
+}
 
 /* Dropdown Menu */
 .blog-button{
