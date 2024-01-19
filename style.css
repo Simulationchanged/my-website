@@ -17,6 +17,7 @@ body {
     background-size: cover;
     position: relative;
     border-bottom: #b1a296 4.5px solid;
+    
    
 }
 
@@ -440,7 +441,7 @@ video {
 .footer {
     background-color: #b1a296;
     height: 300px;
-    font-size: 50px;
+    font-size: 30px;
     color: #557a95;
     border-top: #557a95 4.5px solid;
     text-align: center;
@@ -637,11 +638,12 @@ video {
     }
     nav .fa-bars {
         display: block;
-        color: #557a95;
+        color: white;
         margin: 20px;
         font-size: 22px;
         cursor: pointer;
-        position: absolute;
+        position: fixed;
+        mix-blend-mode: difference;
         top: 20px;
         right: 20px;
     }
