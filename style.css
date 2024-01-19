@@ -634,7 +634,7 @@ video {
         right: -200px;
         text-align: left;
         z-index: 1;
-        transition: 1s;
+        transition: 0.1s;
     }
     nav .fa-bars {
         display: block;
